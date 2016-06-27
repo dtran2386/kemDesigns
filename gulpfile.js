@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserify = require('gulp-browserify');
 
-gulp.task('default', ['html', 'temps', 'js', 'css', 'img']);
+gulp.task('default', ['html', 'temps', 'js', 'js2', 'css', 'img']);
 
 gulp.task('html', function () {
     return gulp.src('./*.html')
@@ -21,6 +21,12 @@ gulp.task('css', function () {
 
 gulp.task('js', function () {
     return gulp.src('./js/app.js')
+        .pipe(browserify())
+        .pipe(gulp.dest('./public/js'));
+});
+
+gulp.task('js2', function () {
+    return gulp.src('./js/jquery.carouFredSel-6.1.0-packed.js')
         .pipe(browserify())
         .pipe(gulp.dest('./public/js'));
 });
