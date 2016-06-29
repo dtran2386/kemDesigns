@@ -26,7 +26,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('js2', function () {
-    return gulp.src('./js/jquery.carouFredSel-6.1.0-packed.js')
+    return gulp.src('./js/noconflict.js')
         .pipe(browserify())
         .pipe(gulp.dest('./public/js'));
 });

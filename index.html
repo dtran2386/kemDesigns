@@ -6,7 +6,6 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-        <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
         <script src="js/app.js"></script>
     </head>
     <header>
@@ -18,7 +17,7 @@
             <p class="name">Kem C. Mikel</p>
         <nav class="nav" id="tabs">
             <ul>
-                <li><a href="#about">About</a></li>
+                <li class="active"><a href="#about">About</a></li>
                 <li><a href="mailto:k_kem@yahoo.com">Contact</a></li>
                 <li><a href="#eyelash">Eyelash Extensions</a></li>
                 <li><a href="#eyebrow">Eyebrows</a></li>
@@ -29,24 +28,23 @@
             <div id="about">
                 <p>reserved for about view</p>
             </div>
-            <div id="eyelash">
-                <p>eyelash view</p>
+            <div id="eyelash" class="pos1">
                 <div id="wrapper">
                 <div id="carousel">
                     <div>
-                        <img src="img/fruit1.png" alt="fruit1" width="200" height="200" />
+                        <img src="https://github.com/dtran2386/kemDesigns/blob/gh-pages/img/fruit1.png?raw=true" alt="fruit1" width="200" height="200" />
                         <span>Apple</span>
                     </div>
                     <div>
-                        <img src="img/fruit2.png" alt="fruit2" width="200" height="200" />
+                        <img src="https://github.com/dtran2386/kemDesigns/blob/gh-pages/img/fruit2.png?raw=true" alt="fruit2" width="200" height="200" />
                         <span>Mandarin</span>
                     </div>
                     <div>
-                        <img src="img/fruit3.png" alt="fruit3" width="200" height="200" />
+                        <img src="https://github.com/dtran2386/kemDesigns/blob/gh-pages/img/fruit3.png?raw=true" alt="fruit3" width="200" height="200" />
                         <span>Banannas</span>
                     </div>
                     <div>
-                        <img src="img/fruit4.png" alt="fruit4" width="200" height="200" />
+                        <img src="https://github.com/dtran2386/kemDesigns/blob/gh-pages/img/fruit4.png?raw=true" alt="fruit4" width="200" height="200" />
                         <span>Cherries</span>
                     </div>
                     <div>
@@ -86,13 +84,68 @@
 		</div>
             </div>
             <div id="eyebrow">
-                <p>eyebrow view</p>
+                <div id="wrapper2">
+                <div id="image">
+                    <div class="image i1"><img src="http://i.imgur.com/MOxAZf7.jpg"></div>
+                    <div class="image i2"><img src=""></div>
+                    <div class="image i3"><img src="https://dl.dropbox.com/u/80409395/Codepen/Nat-noodles.jpg"></div>
+                    <div class="image i4"><img src="https://dl.dropbox.com/u/80409395/Codepen/Charlie-smiling.jpg"></div>
+                    <div class="image i5"><img src="https://dl.dropbox.com/u/80409395/Codepen/Girls-in-leaves.jpg"></div>
+                    <div class="image i6"><img src="https://dl.dropbox.com/u/80409395/Codepen/Natalie-smiling.jpg"></div>
+                    <div class="image i7"><img src="https://dl.dropbox.com/u/80409395/Codepen/Charlie-sleeping.jpg"></div>
+                    <div class="image i8"><img src="https://dl.dropbox.com/u/80409395/Codepen/Sledding.jpg"></div>
+                </div>
+            </div>
             </div>
             <div id="makeup">
-                <p>Make up view</p>
+                <p id="dis">Click on photo. Use arrow keys to rotate carousel. Click on a picture to pan.</p>
+                <div id="carousel3">
+                    <figure id="spinner">
+                    <figure>
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/anton-ploom.jpg" alt="A danseur in brisé (a leap with the legs together) on a blue background">
+                        <figcaption>Anton Ploom</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/annija-kopstsale.jpg" alt="">
+                        <figcaption>Annija Kopshtale</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/daria-elmakova.jpg" alt="">
+                        <figcaption>Daria Elmakova</figcaption>
+                      </figure>
+                       <figure>
+                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/margaret-rodchenkova.jpg" alt="">
+                    <figcaption>Margaret Rodchenkova</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/marta-ozolina.jpg" alt="">
+                    <figcaption>Marta Ozolina</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/victoria-ananyan.jpg" alt="">
+                    <figcaption>Victoria Ananyan</figcaption>
+                    </figure>
+                      <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ekaterina-gusarova.jpg" alt="A ballerina photographed in ">
+                    <figcaption>Ekaterina Gusarova</figcaption>
+                    </figure>
+                    </div>
             </div>
             <div id="nail">
-                <p>nail view.</p>
+                <h1>NAIL ART</h1>
+                <div class="slider" id="slider">
+                    <a class='active' href="#"><img src="http://i.imgur.com/FKTj4wT.jpg" alt="" /></a>
+                    <a href="#"><img src="http://i.imgur.com/EGEHF3T.jpg" alt="" /></a>
+                    <a href="#"><img src="http://i.imgur.com/lT8VYSW.jpg" alt="" /></a>
+                    <a href="#"><img src="http://i.imgur.com/I2rWUZQ.jpg" alt="" /></a>
+                    <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ekaterina-gusarova.jpg" alt="" /></a>
+                    <a href="#"><img src="http://i.imgur.com/I2rWUZQ.jpg" alt="" /></a>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <filter id="lessblur"><feGaussianBlur stdDeviation="1"/></filter>
+                    <filter id="blur"><feGaussianBlur stdDeviation="5"/></filter>
+                    <filter id="noblur"><feGaussianBlur stdDeviation="0"/></filter>
+                </svg>
             </div>
         </div>
         </nav>
